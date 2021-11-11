@@ -10,7 +10,7 @@ const AppRoute = () => {
             <Switch>
                 <Route path={'/'}  exact component={HomePage}/>
                 <Route path={'/about'} exact component={AboutPage} />
-                <Route path={'/product'} exact component={ProductsPage} />
+                <Route path={'/products'} exact component={ProductsPage} />
                 <Route path={'/product/:id'} exact children={SingleProductPage} />
                 <Route path={'/cart'} exact component={CartPage} />
                 <Route path={'/checkout'} exact component={CheckoutPage} />
