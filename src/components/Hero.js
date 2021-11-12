@@ -5,7 +5,26 @@ import heroBcg from '../assets/hero-bcg.jpeg'
 import heroBcg2 from '../assets/hero-bcg-2.jpeg'
 
 const Hero = () => {
-  return <h4>hero</h4>
+  return (
+      <Wrapper className={'section-center'}>
+        <article className={'content'}>
+          <h1>
+            design your <br />
+            comfort zone
+          </h1>
+          <p>
+            modern digital entrepreneurs who’ve built remote online businesses, life continues to reward those who venture into the unknown. Why? Because they’re the ones who were willing to get uncomfortable. They’re the ones who’ve embraced discomfort and the true nature of the human experience: An always-changing, ever-evolving, growing process.
+          </p>
+          <Link to={'/products'} className={'btn hero-btn'}>
+            shop now
+          </Link>
+        </article>
+        <article className={'img-container'}>
+          <img src={heroBcg} alt={'nice table'}  className={'main-img'}/>
+          <img src={heroBcg2} alt={'man working'} className={'accent-img'}/>
+        </article>
+      </Wrapper>
+  )
 }
 
 const Wrapper = styled.section`
